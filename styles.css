@@ -60,8 +60,6 @@ body {
   left: 0;
   width: var(--sidebar-width);
   height: 100vh;
-  background-color: var(--color-sidebar-bg);
-  border-right: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   padding: var(--space-xl) var(--space-lg);
@@ -76,15 +74,11 @@ body {
 
 .site-title {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 400;
-  color: var(--color-accent);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-}
-
-.site-title .asterisk {
   color: var(--color-text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
 }
 
 .site-author {
